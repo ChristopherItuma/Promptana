@@ -1,0 +1,3 @@
+export default function PromptAuditorLanding() {
+  return `I've created a production-style React/Tailwind frontend structure for your Prompt Auditor SaaS with:\n\n- Gradient AI hero section with strong value proposition\n- Prompt analyzer playground section\n- Loading state with animated pulse/spinner behavior\n- Beautiful score/result cards for your API response\n- Feature section\n- Value proposition section\n- Smooth hover transitions and slight animations\n- Designed around your response schema (scores, strengths, weaknesses, rewritten prompt, etc.)\n\nBecause the component is large and production-oriented, it's been prepared in the canvas for iteration.`
+}

@@ -1,0 +1,6 @@
+#Install the following requirements to continue
+
+langchain
+langchain-openai
+python-dotenv
+"fastapi[standard]"

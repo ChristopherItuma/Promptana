@@ -1,0 +1,72 @@
+# =========================
+# ENV FILES
+# =========================
+
+.env
+backend/.env
+frontend/.env
+
+
+# =========================
+# PYTHON / FASTAPI
+# =========================
+
+backend/.venv/
+backend/venv/
+
+backend/__pycache__/
+backend/**/*.pyc
+backend/.pytest_cache/
+
+*.py[cod]
+*.pyo
+
+
+# =========================
+# NODE / REACT
+# =========================
+
+frontend/node_modules/
+
+frontend/dist/
+frontend/build/
+
+frontend/.vite/
+frontend/.cache/
+
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+
+
+# =========================
+# OS FILES
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# LOG FILES
+# =========================
+
+*.log
+
+
+# =========================
+# JUPYTER
+# =========================
+
+.ipynb_checkpoints/
+
+
+# =========================
+# MISC
+# =========================
+
+coverage/
