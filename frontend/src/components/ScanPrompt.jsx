@@ -37,7 +37,7 @@ const ScanPrompt = () => {
   }
   }
   return (
-    <section className="bg-alternate-background md:px-12 px-5 py-12 md:py-20 flex flex-col font-poppins">
+    <section className="bg-primary/97 md:px-12 px-5 py-12 md:py-20 flex flex-col font-poppins">
       <SectionTitle title="Explore The Anatomy Of Your Prompt"/>
       {/*Prompt Submission Form */}
       <form onSubmit={handleSubmit} className="lg:w-[60%] md:w-[80%] w-full flex flex-col mx-auto gap-y-3 md:my-10 my-8">

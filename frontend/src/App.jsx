@@ -1,37 +1,18 @@
-import axios from "axios"
-import {useState} from "react"
-import Hero from "./components/Hero"
-import ScanPrompt from "./components/ScanPrompt"
+import { Routes, Route } from "react-router-dom"
+import AnalyzePrompt from "./pages/AnalyzePrompt"
+import Home from "./pages/Home"
 
 
 const App = () => {
-  const [prompt, setPrompt] = useState("")
-  const api = axios.create({
-    baseURL:"http://127.0.0.1:8000"
-  })
-
-  const handleSubmit = async(e)=>{
-    e.preventDefault()
-    const response = await api.post("/analyze-prompt", {prompt})
-    console.log(response.data.result)
-  } 
 
   return (
     <div>
-      <Hero />
-      <ScanPrompt />
-
-
-
-      
-      <h1 className="text-red-500">Welcome to my Prompt Analysis tool</h1>
-      <form>
-      <textarea value={prompt} onChange={(e)=>setPrompt(e.target.value)} 
-      className="border" id="feedback" name="feedback" rows="4" cols="50">
-Enter your comments here...
-</textarea>
-<button className="border" onClick={handleSubmit}>Submit Form</button>
-      </form>
+      {/* Routes start */}
+      <Routes>
+       <Route path="/" element={<Home />}/>
+       <Route path="/analyze-prompt" element={<AnalyzePrompt />} />
+      </Routes>
+      {/* Routes end */}
     </div>
   )
 }
