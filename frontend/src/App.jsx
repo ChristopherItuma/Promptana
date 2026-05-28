@@ -1,5 +1,7 @@
 import axios from "axios"
 import {useState} from "react"
+import Hero from "./components/Hero"
+import ScanPrompt from "./components/ScanPrompt"
 
 
 const App = () => {
@@ -16,6 +18,12 @@ const App = () => {
 
   return (
     <div>
+      <Hero />
+      <ScanPrompt />
+
+
+
+      
       <h1 className="text-red-500">Welcome to my Prompt Analysis tool</h1>
       <form>
       <textarea value={prompt} onChange={(e)=>setPrompt(e.target.value)} 

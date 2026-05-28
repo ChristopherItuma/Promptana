@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
+*{
+  box-sizing: border-box;
+}
+
 @theme {
   --color-primary:#000000;
   --color-foreground:#303030;
   --color-secondary: #FDDA0D;
-  --color-secondary-fade:#FFFF8F
+  --color-secondary-fade:#FFFF8F;
+  --color-alternate:#ffffff;
+  --font-poppins: Poppins, sans-serif;
+  --color-alternate-background:#181818;
 }
