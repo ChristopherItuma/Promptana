@@ -1,20 +1,26 @@
 import { MdHideSource } from "react-icons/md";
 import { SlEmotsmile } from "react-icons/sl";
 import { IoSpeedometerOutline } from "react-icons/io5";
+
 export const values = [
   {
-    icon:<MdHideSource />,
-    title:"Prevent Ambiguity and Hallucination",
-    subtitle:"With a weak prompt, ambiguity and hallucinations are bound to happen. But with promptana, you can validate this quaality of your prompt before deploying your app",
+    icon: <MdHideSource />,
+    title: "Reduce Ambiguity and Hallucinations",
+    subtitle:
+      "Weak prompts lead to inconsistent and unreliable AI responses. Promptana helps you detect ambiguity and hallucination risks before deployment.",
   },
+
   {
-    icon:<SlEmotsmile />,
-    title:"Increased Users Satisfaction",
-    subtitle:"The reliability of your LLM response says alot about you as a developer. Especially when building client facing applications. With few improvement you can get peak performance"
+    icon: <SlEmotsmile />,
+    title: "Improve User Experience",
+    subtitle:
+      "Reliable AI responses build trust. Promptana helps developers create more consistent prompt behavior for user-facing applications.",
   },
+
   {
-    icon:<IoSpeedometerOutline />,
-    title:"Increased Development Speed",
-    subtitle:"Instead of wasting time guessing and second thinking if your prompt is good enough, you can just have Promptana do that for you while you focus on other aspects of development"
+    icon: <IoSpeedometerOutline />,
+    title: "Build Faster With Confidence",
+    subtitle:
+      "Stop second-guessing your prompts. Promptana helps you validate prompt quality quickly so you can focus on building.",
   }
-]
+];

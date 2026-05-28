@@ -1,14 +1,14 @@
-export const  features = [
-  "Prompt Clarity Score",
-  "Prompt Specificity Score",
-  "Prompt Hallucination Risk Score",
-  "Prompt Ambiguity Score",
-  "Prompt Constraint Score",
-  "Missing Elements Analysis",
+export const features = [
+  "Clarity Scoring",
+  "Specificity Analysis",
+  "Hallucination Risk Detection",
+  "Ambiguity Analysis",
+  "Constraint Evaluation",
+  "Missing Elements Detection",
   "Strength Analysis",
-  "Weakness Analysis",
-  "Improvement Guide",
-  "Optimized ReWritten Prompt",
-  "Learning Note",
+  "Weakness Detection",
+  "Actionable Improvement Guide",
+  "AI Prompt Rewriting",
+  "Learning Insights",
   "Score Reasoning"
 ]

@@ -9,7 +9,7 @@ const OurValues = () => {
       <div className="grid md:grid-cols-3 gap-5 lg:w-[80%] mx-auto mt-7">
       {
         values.map((item,index)=>(
-          <Card key={index} icon={item.icon} title={item.title} subtitle={item.subtitle} bgColor="alternate-background"/>
+          <Card key={index} icon={item.icon} title={item.title} subtitle={item.subtitle} bgColor="foreground"/>
         ))
       } 
       </div>    
