@@ -2,7 +2,7 @@ import { FiAlertTriangle, FiCheckCircle, FiZap, FiCopy } from "react-icons/fi";
 import { PiBrain } from "react-icons/pi";
 import ListCard from "./ui/ListCard";
 import ScoreCard from "./ui/ScoreCard";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { FaRegLightbulb } from "react-icons/fa";
 const AnalysisResult = ({ result }) => {
   const copyPrompt = () => {
@@ -111,7 +111,6 @@ const AnalysisResult = ({ result }) => {
 
             <p className="mt-4 text-slate-300">{result.score_reasoning}</p>
           </div>
-          <ToastContainer />
         </section>
       )}
     </>

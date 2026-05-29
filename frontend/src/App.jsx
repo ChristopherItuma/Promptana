@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import AnalyzePrompt from "./pages/AnalyzePrompt"
 import Home from "./pages/Home"
+import { ToastContainer } from "react-toastify"
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
        <Route path="/analyze-prompt" element={<AnalyzePrompt />} />
       </Routes>
       {/* Routes end */}
+      <ToastContainer />
     </div>
   )
 }
