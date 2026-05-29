@@ -4,4 +4,4 @@ langchain
 langchain-openai
 python-dotenv
 uvicorn
-"fastapi[standard]"
+fastapi
