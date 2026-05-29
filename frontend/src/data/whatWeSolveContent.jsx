@@ -7,20 +7,23 @@ export const whatWeSolve = [
     icon: <TbCancel />,
     title: "Eliminate Prompt Guessing",
     subtitle:
-      "Stop relying on trial and error. Promptana gives developers a structured way to evaluate prompt quality and reliability."
+      "Stop relying on trial and error. Promptana gives developers a structured way to evaluate prompt quality and reliability.",
+      animation_delay:0.1
   },
 
   {
     icon: <GiCatch />,
     title: "Detect Hidden Weaknesses",
     subtitle:
-      "Identify ambiguity, weak constraints, hallucination risks, and missing prompt components before deployment."
+      "Identify ambiguity, weak constraints, hallucination risks, and missing prompt components before deployment.",
+      animation_delay:0.2
   },
 
   {
     icon: <MdOutlineWindPower />,
     title: "Improve Response Reliability",
     subtitle:
-      "Promptana rewrites weak prompts using proven prompt engineering principles to produce more predictable AI behavior."
+      "Promptana rewrites weak prompts using proven prompt engineering principles to produce more predictable AI behavior.",
+      animation_delay:0.3
   }
 ];

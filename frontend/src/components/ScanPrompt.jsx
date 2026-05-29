@@ -4,6 +4,8 @@ import { api } from "../config/axios"
 import { toast, ToastContainer } from "react-toastify"
 import { FiLoader } from "react-icons/fi"
 import AnalysisResult from "./AnalysisResult"
+import {motion} from "motion/react"
+
 const ScanPrompt = () => {
   const [prompt, setPrompt] = useState("")
   const [result, setResult]=useState(null)
@@ -40,7 +42,13 @@ const ScanPrompt = () => {
     <section className="bg-primary/97 md:px-12 px-5 py-12 md:py-20 flex flex-col font-poppins">
       <SectionTitle title="Analyze the Anatomy of Your Prompt"/>
       {/*Prompt Submission Form */}
-      <form onSubmit={handleSubmit} className="lg:w-[60%] md:w-[80%] w-full flex flex-col mx-auto gap-y-3 md:my-10 my-8">
+      <motion.form
+         initial={{ opacity: 0, y:100 }}
+         whileInView={{ opacity: 1, y:0 }}
+         transition={{duration:0.5}}
+         viewport={{once:true}}
+
+      onSubmit={handleSubmit} className="lg:w-[60%] md:w-[80%] w-full flex flex-col mx-auto gap-y-3 md:my-10 my-8">
         <label htmlFor="prompt" className="text-left text-alternate">System Prompt: </label>
         <textarea placeholder="You are a healthcare AI..."  name="prompt" id="prompt" value={prompt} onChange={(e)=>setPrompt(e.target.value)} className="border border-secondary-fade outline-none focus:border-secondary focus:border-2 rounded-md w-full placeholder:text-alternate/60 p-3 
         min-h-60 text-white"></textarea>
@@ -53,7 +61,7 @@ const ScanPrompt = () => {
           }
         </button>
         </div>
-      </form>
+      </motion.form>
 
       {/* Display Results After Loading */}
        <AnalysisResult result={result}/>
