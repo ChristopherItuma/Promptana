@@ -23,6 +23,10 @@ app.add_middleware(
 class PromptRequest(BaseModel):
     prompt:str
 
+@app.get("/")
+def home():
+    return {"message": "Promptana API is live"}
+
 @app.post("/analyze-prompt")
 def analyze_prompt(data:PromptRequest):
   response = agent_executor(data.prompt)
