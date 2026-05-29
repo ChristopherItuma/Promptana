@@ -9,7 +9,7 @@ app = FastAPI()
 # List of allowed origins (e.g., your frontend URL)
 origins = [
     "http://localhost:5173",
-    "https://your-app-domain.com",
+    "https://promptana-seven.vercel.app",
 ]
 
 app.add_middleware(
